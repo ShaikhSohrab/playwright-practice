@@ -11,6 +11,6 @@ test.skip("Basic Navigation", async ({page}) => {
     
 })
 
-test.only("Using Various Locator Methods", async({page})=>{
-    
+test.skip("Using Various Locator Methods", async({page})=>{
+
 })
