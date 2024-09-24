@@ -1,6 +1,6 @@
 import {test} from "@playwright/test";
 
-test.skip("Basic Navigation", async ({page}) => {
+test("Basic Navigation", async ({page}) => {
     await page.goto("https://gitlab.com/");
     await page.click("a.slp-btn.be-nav__nav-button.slp-btn-primary");
     // await page.locator('[data-testid="new-user-first-name-field"]').fill('John1');
@@ -11,6 +11,6 @@ test.skip("Basic Navigation", async ({page}) => {
     
 })
 
-test.skip("Using Various Locator Methods", async({page})=>{
+// test.skip("Using Various Locator Methods", async({page})=>{
 
-})
+// })
