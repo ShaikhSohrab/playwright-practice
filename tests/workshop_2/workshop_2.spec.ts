@@ -1,7 +1,7 @@
 import {test, expect} from "@playwright/test";
 import { threadId } from "worker_threads";
 
-test.skip("Autmating Form Submissions", async ({page})=>{
+test("Autmating Form Submissions", async ({page})=>{
     await page.goto('https://demo.playwright.dev/todomvc');
 
     const toDO = page.getByPlaceholder('What needs to be done?');
@@ -30,7 +30,7 @@ test.skip("Autmating Form Submissions", async ({page})=>{
 })
 
 
-test.skip("Handeling Form", async ({page}) => {
+test("Handeling Form", async ({page}) => {
 
     await page.goto('https://demo.playwright.dev/todomvc');
     await page.fill('[placeholder="What needs to be done?"]', 'Test First Fill');
@@ -40,7 +40,7 @@ test.skip("Handeling Form", async ({page}) => {
     await page.waitForTimeout(3000);
 })
 
-test.skip("Handeling Form", async ({page}) => {
+test("Handeling Form", async ({page}) => {
 
     await page.goto('https://demo.playwright.dev/todomvc');
     const placeholder = '[placeholder="What needs to be done?"]''
