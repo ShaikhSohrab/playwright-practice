@@ -7,7 +7,7 @@ test("Basic Navigation", async ({page}) => {
     // await page.locator('[data-testid="new-user-last-name-field"]').fill('Snow1');
     await page.getByTestId('new-user-first-name-field').fill('John2')
     await page.getByTestId('new-user-last-name-field').fill('Snow2')
-    await page.waitForTimeout(5000);
+    await page.waitForTimeout(3000);
     
 })
 
